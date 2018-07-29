@@ -1,0 +1,18 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$green: #8ac03e;
+
+//device resolutions
+$laptop: 1100px;
+$tablets: 768px;
+$phones: 480px;
+
+//import
+//@import "mixins/*";
+@import "layout/mixins";
+@import "layout/setup";
+
+@import "blocks/**/*";
