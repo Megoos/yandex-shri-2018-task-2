@@ -2,9 +2,38 @@
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
-.main-content {
+.main {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+}
+
+.main__content {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.main__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__title-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.main__block {
+    border-radius: 20px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
