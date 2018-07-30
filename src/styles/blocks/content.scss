@@ -1,5 +1,4 @@
 .content {
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -8,26 +7,18 @@
 .main {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: space-between;
     height: 100%;
-    flex: 1;
+    flex: 1;    
+    padding-left: 20px; 
 }
 
 .main__content {
-    width: calc(50% - 10px);
+    width: 50%;
     display: flex;
     flex-direction: column;
-}
-
-.main__title {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main__title-text {
-    font-weight: 700;
-    font-size: 18px;
+    padding-right: 20px;
 }
 
 .main__block {

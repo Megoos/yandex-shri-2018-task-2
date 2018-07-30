@@ -1,0 +1,76 @@
+.icon {
+  background-size: 24px 24px;
+}
+
+.icon-sun-max,
+.icon-sun-min,
+.cloud-drizzle,
+.icon-scheduled,
+.icon-sun,
+.icon-sun-2,
+.icon-temperature,
+.icon-temperature-2 {
+  display: inline-block;
+  background: url('../img/icons/icon_spite.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.icon-sun-max {
+  background-position: -0px -0px;
+  width: 36px;
+  height: 36px;
+}
+.icon-sun-min {
+  background-position: -0px -36px;
+  width: 36px;
+  height: 36px;
+}
+.cloud-drizzle {
+  background-position: -0px -72px;
+  width: 26px;
+  height: 26px;
+}
+.icon-scheduled {
+  background-position: -0px -98px;
+  width: 24px;
+  height: 24px;
+}
+.icon-sun {
+  background-position: -0px -122px;
+  width: 24px;
+  height: 24px;
+}
+.icon-sun-2 {
+  background-position: -0px -146px;
+  width: 24px;
+  height: 24px;
+}
+.icon-temperature {
+  background-position: -0px -170px;
+  width: 24px;
+  height: 24px;
+}
+.icon-temperature-2 {
+  background-position: -0px -194px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-color: #000;
+}
+
+.icon-arrow_right {
+  transform: rotate(45deg);
+}
+
+.icon-arrow_left {
+  transform: rotate(-135deg);
+}

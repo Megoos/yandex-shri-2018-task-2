@@ -1,66 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/icon.css"/>
-    <title>Яндекс Дом</title>
-  </head>
-  <body>
-    <div class="layout">
-      <header class="header">
-        <a href="#" class="logo">
-          <img src="./img/Яндекс Дом@1x.png" alt="" class="logo__img">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Яндекс Дом</title>
+</head>
+
+<body>
+  <div class="layout">
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="./img/Яндекс Дом@1x.png" alt="" class="logo__img">
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__link active" data-scroll-to="1">
+          Сводка
         </a>
-        <nav class="nav">            
-          <a href="#" class="nav__link active" data-scroll-to="1">
-            Сводка
-          </a>
-          <a href="#" class="nav__link" data-scroll-to="2">
-            Устройства
-          </a>
-          <a href="#" class="nav__link" data-scroll-to="3">
-            Сценарии
-          </a>
-        </nav>          
-        <a class="hamburger-menu-link" href="#">
-          <div class="hamburger-menu-link__bars"></div>
+        <a href="#" class="nav__link" data-scroll-to="2">
+          Устройства
         </a>
-      </header>
-      <div class="content">
-        <div class="main">
-          <div class="main__content">
-            <div class="main__title">
-              <p class="main__title-text">Сводка</p>
-            </div>
-            <div class="main__block" style="background-image: url('./img/bg@1x.png')">
-              sfsdf
-            </div>
+        <a href="#" class="nav__link" data-scroll-to="3">
+          Сценарии
+        </a>
+      </nav>
+      <a class="hamburger-menu-link" href="#">
+        <div class="hamburger-menu-link__bars"></div>
+      </a>
+    </header>
+    <div class="content">
+      <div class="main">
+        <div class="main__content">
+          <div class="title">
+            <p class="title__text">Сводка</p>
           </div>
-          <div class="main__content">
-            <div class="main__title">
-              <p class="main__title-text">Избранные сценарии</p>
-              <div class="arrow">
-                тут две стрелочки
+          <div class="main__block" style="background-image: url('./img/bg@1x.png')">
+            sfsdf
+          </div>
+        </div>
+        <div class="main__content">
+          <div class="title">
+            <p class="title__text">Избранные сценарии</p>
+            <div class="title__arrow">
+              <div class="title__arrow-item">
+                <span class="icon-arrow icon-arrow_left"></span>
+              </div>
+              <div class="title__arrow-item">
+                <span class="icon-arrow icon-arrow_right"></span>
               </div>
             </div>
-            <div class="main__block">
+          </div>
+          <div class="main__block">
 
+          </div>
+        </div>
+      </div>
+      <div class="devices">
+        <div class="title">
+          <p class="title__text">Избранные Устроства</p>
+          <ul class="title__nav">
+            <li class="title__nav-item active">
+              Все
+            </li>
+            <li class="title__nav-item">
+              Кухня
+            </li>
+            <li class="title__nav-item">
+              Зал
+            </li>
+            <li class="title__nav-item">
+              Лампочки
+            </li>
+            <li class="title__nav-item">
+              Камеры
+            </li>
+          </ul>
+          <div class="title__arrow">
+            <div class="title__arrow-item">
+              <span class="icon-arrow icon-arrow_left"></span>
+            </div>
+            <div class="title__arrow-item">
+              <span class="icon-arrow icon-arrow_right"></span>
             </div>
           </div>
         </div>
-        <div class="bottom-content">
+        <div class="devices__items">
+          <div class="device">
+            <div class="icon icon-sun-2">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                Xiaomi Yeelight LED Smart Bulb
+              </div>
+              <div class="device__subtext">
+                Включено
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <div class="icon icon-sun">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                D-Link Omna 180 Cam
+              </div>
+              <div class="device__subtext">
+                Включится в 17:00
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <div class="icon icon-temperature">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                Elgato Eve Degree Connected
+              </div>
+              <div class="device__subtext">
+                Выключено до 17:00
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <div class="icon icon-sun">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                LIFX Mini Day & Dusk A60 E27
+              </div>
+              <div class="device__subtext">
+                Включится в 17:00
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <div class="icon icon-sun-2">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                Xiaomi Mi Air Purifier 2S
+              </div>
+              <div class="device__subtext">
+                Включено
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <div class="icon icon-sun">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                Philips Zhirui
+              </div>
+              <div class="device__subtext">
+                Выключено
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <div class="icon icon-sun-2">
+            </div>
+            <div class="device__content">
+              <div class="device__text">
+                Xiaomi Mi Air Purifier 2S
+              </div>
+              <div class="device__subtext">
+                Включено
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-    <footer class="footer">
-        <a class="footer__link" href="#">Помощь</a>
-        <a class="footer__link" href="#">Обратная связь</a>
-        <a class="footer__link" href="#">Разработчикам</a>
-        <a class="footer__link" href="#">Условия использования</a>
-        <p class="footer__text">© 2001–2017  ООО «Яндекс»</p>
-    </footer>
-  </body>
+  </div>
+  <footer class="footer">
+    <a class="footer__link" href="#">Помощь</a>
+    <a class="footer__link" href="#">Обратная связь</a>
+    <a class="footer__link" href="#">Разработчикам</a>
+    <a class="footer__link" href="#">Условия использования</a>
+    <p class="footer__text">© 2001–2017 ООО «Яндекс»</p>
+  </footer>
+</body>
+
 </html>
