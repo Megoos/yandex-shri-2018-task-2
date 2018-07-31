@@ -1,0 +1,14 @@
+.favorite-devices {
+    height: 200px;
+    overflow: hidden;    
+}
+
+.fevorite-devices__items {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    .device {
+        margin-left: 20px;
+    }
+}

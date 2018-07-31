@@ -1,0 +1,96 @@
+.condition {
+    border-radius: 20px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.condition-devices {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    .device {
+        margin-top: 15px;
+    }
+}
+
+.condtition-info {
+    margin-left: 20px;
+}
+
+.condition-arrow {
+    opacity: 0.3;
+    transition: opacity .15s ease-out;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.greeting {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting__text {
+    font-size: 27px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.greating__description {
+    font-size: 14px;
+    color: #333333;
+}
+
+.greating__temperature {
+    display: flex;
+    margin-top: 30px;
+}
+
+.greating__temperature-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.greating__temperature-desc {
+    font-size: 14px;
+    color: #858585;
+}
+
+.greating__temperature-value {
+    font-size: 36px;
+    color: #333333;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.greating__temperature-info {
+    display: flex;
+    align-items: center;
+}
+
+.greating__temperature-icon {
+    margin-left: 5px;
+}
+
+

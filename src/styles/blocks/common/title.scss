@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 0 10px 0; 
+    padding: 0 20px;
 }
 
 .title__text {
@@ -23,7 +24,7 @@
     border-radius: 20px;
     padding: 5px 15px;
     font-size: 13px;
-    color: #000000;
+    color: #000;
     font-weight: 700;
     margin-left: 20px;
     transition: background-color .15s ease-out;
