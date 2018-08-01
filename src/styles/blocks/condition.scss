@@ -12,6 +12,7 @@
     margin-left: 20px;
     margin-top: 10px;
     background-image: url('../img/bg@1x.png');
+    flex-shrink: 0;
 
     @media
     only screen and (min-device-pixel-ratio: 2),
@@ -24,8 +25,8 @@
 .condition-devices {
     padding-right: 20px;
     margin-left: 20px;
-    overflow-y: scroll;
-    
+    overflow-y: auto;
+    flex-shrink: 0; 
 }
 
 .condition-scroll {
@@ -64,13 +65,13 @@
 
 .greeting__text {
     font-size: 27px;
-    color: #333333;
+    color: $main;
     font-weight: 700;
 }
 
 .greating__description {
     font-size: 14px;
-    color: #333333;
+    color: $main;
 }
 
 .greating__temperature {
@@ -86,12 +87,12 @@
 
 .greating__temperature-desc {
     font-size: 14px;
-    color: #858585;
+    color: $grey;
 }
 
 .greating__temperature-value {
     font-size: 36px;
-    color: #333333;
+    color: $main;
     font-weight: 700;
     letter-spacing: 0;
 }

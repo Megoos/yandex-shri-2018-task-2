@@ -20,21 +20,21 @@
 }
 
 .title__nav-item {
-    background-color: #F7F7F7;
+    background-color: $itemColor;
     border-radius: 20px;
     padding: 5px 15px;
     font-size: 13px;
-    color: #000;
+    color: $main;
     font-weight: 700;
     margin-left: 20px;
     transition: background-color .15s ease-out;
     cursor: pointer;
 
     &:hover {
-        background-color: #eeeeee;
+        background-color: darken($itemColor, 5%);
     }
     &.active {
-        background-color: #FFD93E;
+        background-color: $yellow;
     }
 }
 
