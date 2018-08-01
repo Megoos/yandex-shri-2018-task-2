@@ -11,12 +11,28 @@
     justify-content: space-between;
     margin-left: 20px;
     margin-top: 10px;
+    background-image: url('../img/bg@1x.png');
+
+    @media
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) { 
+        background-image: url('../img/bg@2x.png');
+    }
 }
 
 .condition-devices {
-    margin-right: 20px;
+    padding-right: 20px;
     margin-left: 20px;
-    margin-top: 5px;
+    overflow-y: scroll;
+    
+}
+
+.condition-scroll {
+    padding: 5px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+
     .device {
         margin-top: 15px;
     }
@@ -30,18 +46,14 @@
     opacity: 0.3;
     transition: opacity .15s ease-out;
     cursor: pointer;
-    width: 200px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0px;
-    right: 20px;
-
-    &:hover {
-        opacity: 1;
-    }
+    right: 110px;
 }
 
 .greeting {

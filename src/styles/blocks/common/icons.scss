@@ -7,12 +7,19 @@
 .icon-temperature,
 .icon-temperature-2 {
   display: inline-block;
-  background-image: url('../img/icons/icon_spite.png');
+  background-image: url('../img/icons/icon_spite@1x.png');
   background-repeat: no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
   background-size: 36px 218px;
+
+  @media
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) { 
+      background-image: url('../img/icons/icon_spite@2x.png');
+  }
 }
 
 .icon-sun-max {

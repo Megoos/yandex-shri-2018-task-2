@@ -1,12 +1,17 @@
 .favorite-devices {
-    height: 200px;
-    overflow: hidden;    
+    height: 200px;       
 }
 
-.fevorite-devices__items {
+.fevorite-devices__items {    
+    padding: 10px 0;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.favorite-scroll {
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
 
     .device {
         margin-left: 20px;
