@@ -7,6 +7,14 @@
     margin-left: 15px;
     padding-top: 10px;
     width: 650px;
+
+    @include phones {
+        padding: 0 15px;
+        margin-left: 0px;
+        width: 100%;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+    }
 }
 
 .actions {
@@ -17,6 +25,12 @@
     height: 340px;
     width: 645px;
     //padding: 10px 5px 10px 10px;
+
+    @include phones {
+        width: auto;
+        height: auto;
+        flex-wrap: nowrap;
+    }
 
 }
 
@@ -42,7 +56,16 @@
 
     &:nth-child(3n+3) {
         margin-right: 10px;
+
+        @include phones {
+            margin-right: 15px;
+        }
     }
+
+    @include phones {
+        margin-bottom: 5px;
+    }
+
 }
 
 .action__text {

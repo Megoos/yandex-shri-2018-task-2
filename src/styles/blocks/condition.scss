@@ -20,13 +20,24 @@
     only screen and (min-resolution: 2dppx) { 
         background-image: url('../img/bg@2x.png');
     }
+
+    @include phones {
+        height: 280px;
+        flex-direction: column;
+        margin: 10px 15px 0px;
+    }
 }
 
 .condition-devices {
-    padding-right: 20px;
-    margin-left: 20px;
+    padding: 0 20px;
     overflow-y: auto;
     flex-shrink: 0; 
+
+    @include phones {
+        overflow-x: auto;
+        padding: 0 15px 0 0;
+        display: flex;
+    }
 }
 
 .condition-scroll {
@@ -36,11 +47,21 @@
 
     .device {
         margin-top: 15px;
+
+        @include phones {
+            margin-left: 15px;
+            margin-top: 0px;
+        }
+    }
+
+    @include phones {
+        flex-direction: row;
+        padding-right: 15px;
     }
 }
 
 .condtition-info {
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .condition-arrow {
@@ -55,28 +76,48 @@
     position: absolute;
     bottom: 0px;
     right: 110px;
+
+    @include phones {
+        display: none;
+    }
 }
 
 .greeting {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+
+    @include phones {
+        margin-top: 20px;
+    }
 }
 
 .greeting__text {
     font-size: 27px;
     color: $main;
     font-weight: 700;
+
+    @include phones {
+        font-size: 18px;
+    }
 }
 
 .greating__description {
     font-size: 14px;
     color: $main;
+
+    @include phones {
+        font-size: 12px;
+    }
 }
 
 .greating__temperature {
     display: flex;
     margin-top: 30px;
+
+    @include phones {
+        margin-top: 20px;
+    }
 }
 
 .greating__temperature-item {
@@ -88,6 +129,10 @@
 .greating__temperature-desc {
     font-size: 14px;
     color: $grey;
+
+    @include phones {
+        font-size: 12px;
+    }
 }
 
 .greating__temperature-value {
@@ -95,6 +140,10 @@
     color: $main;
     font-weight: 700;
     letter-spacing: 0;
+
+    @include phones {
+        font-size: 24px;
+    }
 }
 
 .greating__temperature-info {

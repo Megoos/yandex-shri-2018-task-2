@@ -10,22 +10,36 @@
     margin-top: 10px;
     justify-content: flex-start;
     height: 100%;
-    // flex: 1;
+    @include phones {
+        flex-direction: column;   
+        margin-top: 0;   
+    }
 }
 
 .main__content {
     width: 50%;
     display: flex;
     flex-direction: column;   
-    min-width: 470px;
+    min-width: 470px;    
 
     &_right {
         width: auto;
+        @include phones {
+            margin-bottom: 0px;   
+        }
     }
 
     &_left {
         max-width: 740px;
         flex: 1;
+        @include phones {
+            margin-bottom: 10px;   
+        }
+    }
+
+    @include phones {
+        width: 100%;   
+        min-width: auto;   
     }
 }
 

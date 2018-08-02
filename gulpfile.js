@@ -34,12 +34,12 @@ gulp.task('sass', () => {
         cascade: false
       })
     )
-    .pipe(
-      cssunit({
-        type: 'px-to-rem',
-        rootSize: 16
-      })
-    )
+    // .pipe(
+    //   cssunit({
+    //     type: 'px-to-rem',
+    //     rootSize: 16
+    //   })
+    // )
     .pipe(csso())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css/'))

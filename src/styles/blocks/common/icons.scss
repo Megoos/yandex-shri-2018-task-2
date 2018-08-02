@@ -96,3 +96,14 @@
 	transform: translate(5px, -7px);
 
 }
+
+.icon-nav {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-color: $main;
+  transform: rotate(135deg);
+  margin-left: 3px;
+}

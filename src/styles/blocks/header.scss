@@ -4,6 +4,10 @@
     border-bottom: 1px solid #F0F0F0;
     height: 80px;
     padding: 0 20px;
+    @include phones {
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
 }
 
 .logo__img {
@@ -35,3 +39,39 @@
         opacity: 1;
     }
   }
+
+
+.hamburger-menu-link {
+	vertical-align: middle;
+	position: relative;
+	height: 15px;
+	align-items: center;
+	display: none;
+
+	@include phones {
+        display: flex;
+	}
+}
+
+.hamburger-menu-link__bars {
+	&, &:before, &:after {
+		background: $main;
+		width: 20px;
+		height: 3px;
+		border-radius: 3px;
+	}
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		position: absolute;
+	}
+
+	&:before {
+		top: 0;
+	}
+
+	&:after {
+		bottom: 0;
+	}
+}
