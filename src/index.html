@@ -10,132 +10,355 @@
 </head>
 
 <body>
-  <div class="layout">
-    <header class="header">
-      <a href="#" class="logo">
-        <img src="./img/icons/Яндекс Дом.svg" alt="" class="logo__img">
-      </a>
-      <nav class="nav">
-        <a href="#" class="nav__link active" data-scroll-to="1">
-          Сводка
+  <div class="wrapper">
+    <div class="layout">
+      <header class="header">
+        <a href="#" class="logo">
+          <img src="./img/icons/Яндекс Дом.svg" alt="" class="logo__img">
         </a>
-        <a href="#" class="nav__link" data-scroll-to="2">
-          Устройства
+        <nav class="nav">
+          <a href="#" class="nav__link active" data-scroll-to="1">
+            Сводка
+          </a>
+          <a href="#" class="nav__link" data-scroll-to="2">
+            Устройства
+          </a>
+          <a href="#" class="nav__link" data-scroll-to="3">
+            Сценарии
+          </a>
+        </nav>
+        <a class="hamburger-menu-link" href="#">
+          <div class="hamburger-menu-link__bars"></div>
         </a>
-        <a href="#" class="nav__link" data-scroll-to="3">
-          Сценарии
-        </a>
-      </nav>
-      <a class="hamburger-menu-link" href="#">
-        <div class="hamburger-menu-link__bars"></div>
-      </a>
-    </header>
-    <div class="content">
-      <div class="main">
-        <div class="main__content main__content_left">
-          <div class="title">
-            <p class="title__text">Сводка</p>
-          </div>
-          <div class="condition">
-            <div class="condtition-info">
-              <div class="greeting">
-                <div class="greeting__text">
-                  Привет, Геннадий!
-                </div>
-                <div class="greating__description">
-                  Двери и окна закрыты, сигнализация включена.
-                </div>
-                <div class="greating__temperature">
-                  <div class="greating__temperature-item">
-                    <div class="greating__temperature-desc">
-                      Дома
-                    </div>
-                    <div class="greating__temperature-info">
-                      <div class="greating__temperature-value">
-                        +23
-                      </div>
-                    </div>
+      </header>
+      <div class="content">
+        <div class="main">
+          <div class="main__content main__content_left">
+            <div class="title">
+              <p class="title__text">Сводка</p>
+            </div>
+            <div class="condition">
+              <div class="condtition-info">
+                <div class="greeting">
+                  <div class="greeting__text">
+                    Привет, Геннадий!
                   </div>
-                  <div class="greating__temperature-item">
-                    <div class="greating__temperature-desc">
-                      За окном
-                    </div>
-                    <div class="greating__temperature-info">
-                      <div class="greating__temperature-value">
-                        +19
+                  <div class="greating__description">
+                    Двери и окна закрыты, сигнализация включена.
+                  </div>
+                  <div class="greating__temperature">
+                    <div class="greating__temperature-item">
+                      <div class="greating__temperature-desc">
+                        Дома
                       </div>
-                      <div class="greating__temperature-icon">
-                        <span class="cloud-drizzle"></span>
+                      <div class="greating__temperature-info">
+                        <div class="greating__temperature-value">
+                          +23
+                        </div>
+                      </div>
+                    </div>
+                    <div class="greating__temperature-item">
+                      <div class="greating__temperature-desc">
+                        За окном
+                      </div>
+                      <div class="greating__temperature-info">
+                        <div class="greating__temperature-value">
+                          +19
+                        </div>
+                        <div class="greating__temperature-icon">
+                          <span class="cloud-drizzle"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="condition-devices">
+                <div class="condition-scroll">
+                  <div class="device">
+                    <div class="icon icon-sun-2">
+                    </div>
+                    <div class="device__content">
+                      <div class="device__text">
+                        Philips Cooler
+                      </div>
+                      <div class="device__subtext">
+                        Начнет охлаждать в 16:30
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="device">
+                    <div class="icon icon-sun">
+                    </div>
+                    <div class="device__content">
+                      <div class="device__text">
+                        Xiaomi Yeelight LED Smart Bulb
+                      </div>
+                      <div class="device__subtext">
+                        Включится в 17:00
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="device">
+                    <div class="icon icon-temperature">
+                    </div>
+                    <div class="device__content">
+                      <div class="device__text">
+                        Elgato Eve Degree Connected
+                      </div>
+                      <div class="device__subtext">
+                        Выключено до 17:00
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="device">
+                    <div class="icon icon-sun">
+                    </div>
+                    <div class="device__content">
+                      <div class="device__text">
+                        LIFX Mini Day & Dusk A60 E27
+                      </div>
+                      <div class="device__subtext">
+                        Включится в 17:00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="condition-arrow">
+                <span class="icon-arrow-2"></span>
+              </div>
             </div>
-            <div class="condition-devices">
-              <div class="condition-scroll">
-                <div class="device">
+          </div>
+          <div class="main__content main__content_right">
+            <div class="title">
+              <p class="title__text">Избранные сценарии</p>
+              <div class="title__arrow">
+                <div class="title__arrow-item">
+                  <span class="icon-arrow icon-arrow_left"></span>
+                </div>
+                <div class="title__arrow-item">
+                  <span class="icon-arrow icon-arrow_right"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="actions-container">
+              <div class="actions">
+                <div class="action">
                   <div class="icon icon-sun-2">
                   </div>
-                  <div class="device__content">
-                    <div class="device__text">
-                      Philips Cooler
+                  <div class="action__content">
+                    <div class="action__text">
+                      Выключить весь свет в доме и во дворе
                     </div>
-                    <div class="device__subtext">
-                      Начнет охлаждать в 16:30
-                    </div>
-                  </div>
-                </div>
-
-                <div class="device">
-                  <div class="icon icon-sun">
-                  </div>
-                  <div class="device__content">
-                    <div class="device__text">
-                      Xiaomi Yeelight LED Smart Bulb
-                    </div>
-                    <div class="device__subtext">
-                      Включится в 17:00
+                    <div class="action__subtext">
                     </div>
                   </div>
                 </div>
 
-                <div class="device">
-                  <div class="icon icon-temperature">
+                <div class="action">
+                  <div class="icon-scheduled">
                   </div>
-                  <div class="device__content">
-                    <div class="device__text">
-                      Elgato Eve Degree Connected
+                  <div class="action__content">
+                    <div class="action__text">
+                      Я ухожу
                     </div>
-                    <div class="device__subtext">
-                      Выключено до 17:00
+                    <div class="action__subtext">
                     </div>
                   </div>
                 </div>
 
-                <div class="device">
-                  <div class="icon icon-sun">
+                <div class="action">
+                  <div class="icon icon-sun-2">
                   </div>
-                  <div class="device__content">
-                    <div class="device__text">
-                      LIFX Mini Day & Dusk A60 E27
+                  <div class="action__content">
+                    <div class="action__text">
+                      Включить свет в коридоре
                     </div>
-                    <div class="device__subtext">
-                      Включится в 17:00
+                    <div class="action__subtext">
                     </div>
                   </div>
                 </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Набрать горячую ванну
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Сделать пол тёплым во всей квартире
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Сделать пол тёплым во всей квартире
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Сделать пол тёплым во всей квартире
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="actions">
+                <div class="action">
+                  <div class="icon icon-sun-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Выключить весь свет в доме и во дворе
+                    </div>
+                    <div class="action__subtext">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-scheduled">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Я ухожу
+                    </div>
+                    <div class="action__subtext">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon icon-sun-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Включить свет в коридоре
+                    </div>
+                    <div class="action__subtext">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Набрать горячую ванну
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Сделать пол тёплым во всей квартире
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Сделать пол тёплым во всей квартире
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action">
+                  <div class="icon-temperature-2">
+                  </div>
+                  <div class="action__content">
+                    <div class="action__text">
+                      Сделать пол тёплым во всей квартире
+                    </div>
+                    <div class="action__subtext">
+                      Начнётся в 18:00
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div class="condition-arrow">
-              <span class="icon-arrow-2"></span>
-            </div>
           </div>
         </div>
-        <div class="main__content main__content_right">
+        <div class="favorite-devices">
           <div class="title">
-            <p class="title__text">Избранные сценарии</p>
+            <p class="title__text">Избранные Устроства</p>
+            <ul class="title__nav">
+              <li class="title__nav-item active">
+                Все
+              </li>
+              <li class="title__nav-item">
+                Кухня
+              </li>
+              <li class="title__nav-item">
+                Зал
+              </li>
+              <li class="title__nav-item">
+                Лампочки
+              </li>
+              <li class="title__nav-item">
+                Камеры
+              </li>
+            </ul>
+            <div class="title__nav-mob">
+              <div class="title__nav-item active">
+                <p>Все</p>
+                <span class="icon-nav"></span>
+              </div>
+            </div>
             <div class="title__arrow">
               <div class="title__arrow-item">
                 <span class="icon-arrow icon-arrow_left"></span>
@@ -145,336 +368,136 @@
               </div>
             </div>
           </div>
-
-          <div class="actions-container">
-            <div class="actions">
-              <div class="action">
+          <div class="fevorite-devices__items">
+            <div class="favorite-scroll">
+              <div class="device">
                 <div class="icon icon-sun-2">
                 </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Выключить весь свет в доме и во дворе
+                <div class="device__content">
+                  <div class="device__text">
+                    Xiaomi Yeelight LED Smart Bulb
                   </div>
-                  <div class="action__subtext">
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-scheduled">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Я ухожу
-                  </div>
-                  <div class="action__subtext">
+                  <div class="device__subtext">
+                    Включено
                   </div>
                 </div>
               </div>
 
-              <div class="action">
+              <div class="device">
+                <div class="icon icon-sun">
+                </div>
+                <div class="device__content">
+                  <div class="device__text">
+                    D-Link Omna 180 Cam
+                  </div>
+                  <div class="device__subtext">
+                    Включится в 17:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="device">
+                <div class="icon icon-temperature">
+                </div>
+                <div class="device__content">
+                  <div class="device__text">
+                    Elgato Eve Degree Connected
+                  </div>
+                  <div class="device__subtext">
+                    Выключено до 17:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="device">
+                <div class="icon icon-sun">
+                </div>
+                <div class="device__content">
+                  <div class="device__text">
+                    LIFX Mini Day & Dusk A60 E27
+                  </div>
+                  <div class="device__subtext">
+                    Включится в 17:00
+                  </div>
+                </div>
+              </div>
+
+              <div class="device">
                 <div class="icon icon-sun-2">
                 </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Включить свет в коридоре
+                <div class="device__content">
+                  <div class="device__text">
+                    Xiaomi Mi Air Purifier 2S
                   </div>
-                  <div class="action__subtext">
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-temperature-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Набрать горячую ванну
-                  </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
+                  <div class="device__subtext">
+                    Включено
                   </div>
                 </div>
               </div>
 
-              <div class="action">
-                <div class="icon-temperature-2">
+              <div class="device">
+                <div class="icon icon-sun">
                 </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Сделать пол тёплым во всей квартире
+                <div class="device__content">
+                  <div class="device__text">
+                    Philips Zhirui
                   </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-temperature-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Сделать пол тёплым во всей квартире
-                  </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
+                  <div class="device__subtext">
+                    Выключено
                   </div>
                 </div>
               </div>
 
-              <div class="action">
-                <div class="icon-temperature-2">
+              <div class="device">
+                <div class="icon icon-sun-2">
                 </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Сделать пол тёплым во всей квартире
+                <div class="device__content">
+                  <div class="device__text">
+                    Xiaomi Mi Air Purifier 2S
                   </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
+                  <div class="device__subtext">
+                    Включено
                   </div>
                 </div>
               </div>
-
             </div>
 
-            <div class="actions">
-              <div class="action">
-                <div class="icon icon-sun-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Выключить весь свет в доме и во дворе
-                  </div>
-                  <div class="action__subtext">
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-scheduled">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Я ухожу
-                  </div>
-                  <div class="action__subtext">
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon icon-sun-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Включить свет в коридоре
-                  </div>
-                  <div class="action__subtext">
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-temperature-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Набрать горячую ванну
-                  </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-temperature-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Сделать пол тёплым во всей квартире
-                  </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-temperature-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Сделать пол тёплым во всей квартире
-                  </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
-                  </div>
-                </div>
-              </div>
-
-              <div class="action">
-                <div class="icon-temperature-2">
-                </div>
-                <div class="action__content">
-                  <div class="action__text">
-                    Сделать пол тёплым во всей квартире
-                  </div>
-                  <div class="action__subtext">
-                    Начнётся в 18:00
-                  </div>
-                </div>
-              </div>
-
-            </div>
           </div>
-
         </div>
       </div>
-      <div class="favorite-devices">
-        <div class="title">
-          <p class="title__text">Избранные Устроства</p>
-          <ul class="title__nav">
-            <li class="title__nav-item active">
-              Все
-            </li>
-            <li class="title__nav-item">
-              Кухня
-            </li>
-            <li class="title__nav-item">
-              Зал
-            </li>
-            <li class="title__nav-item">
-              Лампочки
-            </li>
-            <li class="title__nav-item">
-              Камеры
-            </li>
-          </ul>
-          <div class="title__nav-mob">
-            <div class="title__nav-item active">
-              <p>Все</p>
-              <span class="icon-nav"></span>
-            </div>
-          </div>
-          <div class="title__arrow">
-            <div class="title__arrow-item">
-              <span class="icon-arrow icon-arrow_left"></span>
-            </div>
-            <div class="title__arrow-item">
-              <span class="icon-arrow icon-arrow_right"></span>
-            </div>
-          </div>
-        </div>
-        <div class="fevorite-devices__items">
-          <div class="favorite-scroll">
-            <div class="device">
-              <div class="icon icon-sun-2">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  Xiaomi Yeelight LED Smart Bulb
-                </div>
-                <div class="device__subtext">
-                  Включено
-                </div>
-              </div>
-            </div>
-
-            <div class="device">
-              <div class="icon icon-sun">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  D-Link Omna 180 Cam
-                </div>
-                <div class="device__subtext">
-                  Включится в 17:00
-                </div>
-              </div>
-            </div>
-
-            <div class="device">
-              <div class="icon icon-temperature">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  Elgato Eve Degree Connected
-                </div>
-                <div class="device__subtext">
-                  Выключено до 17:00
-                </div>
-              </div>
-            </div>
-
-            <div class="device">
-              <div class="icon icon-sun">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  LIFX Mini Day & Dusk A60 E27
-                </div>
-                <div class="device__subtext">
-                  Включится в 17:00
-                </div>
-              </div>
-            </div>
-
-            <div class="device">
-              <div class="icon icon-sun-2">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  Xiaomi Mi Air Purifier 2S
-                </div>
-                <div class="device__subtext">
-                  Включено
-                </div>
-              </div>
-            </div>
-
-            <div class="device">
-              <div class="icon icon-sun">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  Philips Zhirui
-                </div>
-                <div class="device__subtext">
-                  Выключено
-                </div>
-              </div>
-            </div>
-
-            <div class="device">
-              <div class="icon icon-sun-2">
-              </div>
-              <div class="device__content">
-                <div class="device__text">
-                  Xiaomi Mi Air Purifier 2S
-                </div>
-                <div class="device__subtext">
-                  Включено
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__link">
+        <a class="footer__link__item" href="#">Помощь</a>
+        <a class="footer__link__item" href="#">Обратная связь</a>
+        <a class="footer__link__item" href="#">Разработчикам</a>
+        <a class="footer__link__item" href="#">Условия использования</a>
       </div>
+
+      <p class="footer__text">© 2001–2018 ООО «Яндекс»</p>
+    </footer>
+  </div>
+
+  <!-- menu device mobile  -->
+  <div class="device-menu">
+    <div class="container device-wrap">
+      <a href="#" class="close"></a>
+      <ul class="device-menu__block">
+        <li class="device-menu__item">
+          <a href="#" class="device-menu__link">Сводка</a>
+        </li>
+        <li class="device-menu__item">
+          <a href="#" class="device-menu__link">Устройства</a>
+        </li>
+        <li class="device-menu__item">
+          <a href="#" class="device-menu__link">Сценарии</a>
+        </li>
+      </ul>
     </div>
   </div>
-  <footer class="footer">
-    <div class="footer__link">
-      <a class="footer__link__item" href="#">Помощь</a>
-      <a class="footer__link__item" href="#">Обратная связь</a>
-      <a class="footer__link__item" href="#">Разработчикам</a>
-      <a class="footer__link__item" href="#">Условия использования</a>
-    </div>
 
-    <p class="footer__text">© 2001–2018 ООО «Яндекс»</p>
-  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   font-family:  Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -31,6 +32,13 @@ body {
     min-width: auto;
     width: 100vw;
   }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 100%;
 }
 
 .layout {
