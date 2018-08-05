@@ -52,6 +52,10 @@ body {
   color: $main;
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 // tag styles reset
 a {
   color: inherit;
