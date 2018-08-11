@@ -127,3 +127,22 @@
     display: flex;
     align-items: center;
 }
+
+.modal__trigger--active {
+    z-index: 10;
+  }
+
+#modal__temp {
+    will-change: transform, opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffebee;
+    transform: none;
+    opacity: 1;
+    transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    background-color: $itemColor;
+    border-radius: 20px;
+  }

@@ -1,6 +1,7 @@
 .device {
-    background-color: $itemColor;
-    border-radius: 20px;
+    position: relative;
+    background-color: $itemColor;    
+    border-radius: 20px;    
     width: 200px;
     height: 120px;
     padding: 10px 15px;
