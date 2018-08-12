@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="bg">
     <div class="layout">
       <header class="header">
         <a href="#" class="logo">
@@ -383,7 +383,7 @@
                 </div>
               </div>
 
-              <div class="device">
+              <div data-modal="#modal" class="device modal__trigger">
                 <div class="icon icon-sun">
                 </div>
                 <div class="device__content">
@@ -478,6 +478,7 @@
     </footer>
   </div>
 
+
   <!-- menu device mobile  -->
   <div class="device-menu">
     <div class="container device-wrap">
@@ -496,11 +497,13 @@
     </div>
   </div>
 
+
+
   <!-- modal  -->
   <div class="modal modal__bg" id="modal" role="dialog">
-    <div class="modal__wrap">
-      <div class="modal__block modal__content">
-        <div class="modal__info">
+    <div class="modal__wrap" >
+      <div class="modal__block modal__content" >
+        <div class="modal__info" id="modal-content">
           <div class="modal__title">
             <div class="modal__title-main">
               <div class="modal__title-text">
@@ -533,6 +536,7 @@
             Закрыть
           </div>
         </div>
+
       </div>
 
     </div>
