@@ -9,6 +9,7 @@ const gulp = require('gulp'),
   csso = require('gulp-csso'),
   autoprefixer = require('gulp-autoprefixer'),
   cssunit = require('gulp-css-unit');
+  htmlmin = require('gulp-htmlmin');
 
 // server
 gulp.task('server', function() {
@@ -49,6 +50,10 @@ gulp.task('sass', () => {
 gulp.task('html', () => {
   gulp
     .src('src/index.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('dist'))
     .pipe(reload({ stream: true }));
 });
@@ -66,4 +71,13 @@ gulp.task('watch', () => {
   gulp.watch('src/**/*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'html', 'js', 'server', 'watch']);
+gulp.task('img', () => {
+  gulp
+    .src('src/img/**/*')
+    .pipe(gulp.dest('./dist/img'))
+    .pipe(reload({ stream: true }))
+});
+
+gulp.task('clean', () => del(['dist']));
+
+gulp.task('default', ['sass', 'html', 'js', 'img', 'server', 'watch']);
