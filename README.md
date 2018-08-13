@@ -10,12 +10,12 @@ gulp
 
 Для автоматизации разработки и билда был выбран gulp и необходимые модули для удобства
 
-browser-sync - для liveReload
-gulp-sass - для сборки scss фалов
-gulp-sass-glob - для удобного импорта
-gulp-autoprefixer - автопрефексер css
-gulp-csso - для минификации css
-gulp-htmlmin - минификация html
+- browser-sync - для liveReload
+- gulp-sass - для сборки scss фалов
+- gulp-sass-glob - для удобного импорта
+- gulp-autoprefixer - автопрефексер css
+- gulp-csso - для минификации css
+- gulp-htmlmin - минификация html
 и др.
 
 Перед использование картинок обработал их оптимайзером, что позволило уменьшить их размер на ~57%, так же собрал все иконки в спрайты.
