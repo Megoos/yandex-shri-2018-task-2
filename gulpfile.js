@@ -47,17 +47,23 @@ gulp.task('sass', () => {
 });
 
 gulp.task('html', () => {
-  // let locals = require('./content.json');
-
   gulp
     .src('src/index.html')
     .pipe(gulp.dest('dist'))
     .pipe(reload({ stream: true }));
 });
 
+gulp.task('js', () => {
+  gulp
+    .src('src/js/*.js')
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(reload({ stream: true }));
+});
+
 gulp.task('watch', () => {
   gulp.watch('src/**/*.html', ['html']);
   gulp.watch('src/**/**/*.scss', ['sass']);
+  gulp.watch('src/**/*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'html', 'server', 'watch']);
+gulp.task('default', ['sass', 'html', 'js', 'server', 'watch']);
