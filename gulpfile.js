@@ -8,7 +8,6 @@ const gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   csso = require('gulp-csso'),
   autoprefixer = require('gulp-autoprefixer'),
-  cssunit = require('gulp-css-unit');
   htmlmin = require('gulp-htmlmin');
 
 // server
@@ -35,12 +34,6 @@ gulp.task('sass', () => {
         cascade: false
       })
     )
-    // .pipe(
-    //   cssunit({
-    //     type: 'px-to-rem',
-    //     rootSize: 16
-    //   })
-    // )
     .pipe(csso())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css/'))
