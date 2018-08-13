@@ -27,7 +27,7 @@
             Сценарии
           </a>
         </nav>
-        <a class="hamburger-menu-link" href="#">
+        <a class="hamburger-menu-link" href="#"> 
           <div class="hamburger-menu-link__bars"></div>
         </a>
       </header>
@@ -75,7 +75,7 @@
               </div>
               <div class="condition-devices">
                 <div class="condition-scroll">
-                  <div class="device modal__trigger">
+                  <div class="device modal__trigger" data-type='air' data-value='12'>
                     <div class="icon icon-sun-2">
                     </div>
                     <div class="device__content">
@@ -88,12 +88,12 @@
                     </div>
                   </div>
 
-                  <div class="device modal__trigger">
+                  <div class="device modal__trigger" data-type='air' data-value='12'>
                     <div class="icon icon-sun">
                     </div>
                     <div class="device__content">
                       <div class="device__text">
-                        Xiaomi Yeelight LED Smart Bulb
+                        Xiaomi Yeelight LED Smart
                       </div>
                       <div class="device__subtext">
                         Включится в 17:00
@@ -101,12 +101,12 @@
                     </div>
                   </div>
 
-                  <div class="device modal__trigger">
+                  <div class="device modal__trigger" data-type='air' data-value='12'>
                     <div class="icon icon-temperature">
                     </div>
                     <div class="device__content">
                       <div class="device__text">
-                        Elgato Eve Degree Connected
+                        Elgato Eve Degree
                       </div>
                       <div class="device__subtext">
                         Выключено до 17:00
@@ -114,12 +114,12 @@
                     </div>
                   </div>
 
-                  <div class="device modal__trigger">
+                  <div class="device modal__trigger" data-type='air' data-value='12'>
                     <div class="icon icon-sun">
                     </div>
                     <div class="device__content">
                       <div class="device__text">
-                        LIFX Mini Day & Dusk A60 E27
+                        LIFX Mini Day & Dusk
                       </div>
                       <div class="device__subtext">
                         Включится в 17:00
@@ -370,12 +370,12 @@
           </div>
           <div class="fevorite-devices__items">
             <div class="favorite-scroll">
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='air' data-value='12'>
                 <div class="icon icon-sun-2">
                 </div>
                 <div class="device__content">
                   <div class="device__text">
-                    Xiaomi Yeelight LED Smart Bulb
+                    Xiaomi Yeelight LED Smart
                   </div>
                   <div class="device__subtext">
                     Включено
@@ -383,7 +383,7 @@
                 </div>
               </div>
 
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='sun' data-value='15'>
                 <div class="icon icon-sun">
                 </div>
                 <div class="device__content">
@@ -396,7 +396,7 @@
                 </div>
               </div>
 
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='temp' data-value='-5'>
                 <div class="icon icon-temperature">
                 </div>
                 <div class="device__content">
@@ -409,12 +409,12 @@
                 </div>
               </div>
 
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='sun' data-value='6'>
                 <div class="icon icon-sun">
                 </div>
                 <div class="device__content">
                   <div class="device__text">
-                    LIFX Mini Day & Dusk A60 E27
+                    LIFX Mini Day & Dusk
                   </div>
                   <div class="device__subtext">
                     Включится в 17:00
@@ -422,12 +422,12 @@
                 </div>
               </div>
 
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='air' data-value='15'>
                 <div class="icon icon-sun-2">
                 </div>
                 <div class="device__content">
                   <div class="device__text">
-                    Xiaomi Mi Air Purifier 2S
+                    Xiaomi Mi Air Purifier
                   </div>
                   <div class="device__subtext">
                     Включено
@@ -435,7 +435,7 @@
                 </div>
               </div>
 
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='sun' data-value='10'>
                 <div class="icon icon-sun">
                 </div>
                 <div class="device__content">
@@ -448,12 +448,12 @@
                 </div>
               </div>
 
-              <div class="device modal__trigger">
+              <div class="device modal__trigger" data-type='air' data-value='5' >
                 <div class="icon icon-sun-2">
                 </div>
                 <div class="device__content">
                   <div class="device__text">
-                    Xiaomi Mi Air Purifier 2S
+                    Xiaomi Mi Air Purifier
                   </div>
                   <div class="device__subtext">
                     Включено
@@ -497,8 +497,6 @@
     </div>
   </div>
 
-
-
   <!-- modal  -->
   <div class="modal modal__bg" id="modal" role="dialog">
     <div class="modal__wrap" >
@@ -515,8 +513,8 @@
             </div>
 
             <div class="modal__temperature-info">
-              <div class="modal__temperature-value">
-                +19
+              <div class="modal__temperature-value" id="value">
+                
               </div>
               <div class="modal__icon">
                 <span class="icon-temperature-2"></span>
@@ -524,7 +522,25 @@
             </div>
           </div>
           <div class="modal__content">
-            Здесь элемент управления
+            <div class="modal__temperature active">
+
+              <ul class="modal__nav">
+                <li class="modal__nav-item active">
+                  Вручную
+                </li>
+                <li class="modal__nav-item">
+                  Холодно
+                </li>
+                <li class="modal__nav-item">
+                  Тепло
+                </li>
+              </ul>
+              <div class="modal__temperature-range">
+                  <div class="modal__temperature-min">-10</div>
+                  <div class="modal__temperature-max">+30</div>
+                  <input type="range" min="-10" max="30" value="23" class="modal__temperature-range_slider" id="temperature-range">
+              </div>
+            </div>
           </div>
         </div>
 
@@ -542,7 +558,6 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
 </body>

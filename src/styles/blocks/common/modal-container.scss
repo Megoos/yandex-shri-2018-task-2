@@ -19,8 +19,6 @@
     transition: background-color 0.2s ease-in;
 }
 
-
-
 .modal__wrap {
 	height: 100vh;
 	display: flex;
@@ -39,7 +37,7 @@
     flex-direction: column;    
     flex: 1;
     max-width: 630px;
-    
+    z-index: 1;
 }
 
 .modal__info {
@@ -125,10 +123,6 @@
 .modal__temperature-info {
     display: flex;
     margin-left: auto;
-
-    @include phones {
-		display: none;
-	}
 }
 
 .modal__temperature-value {
@@ -142,6 +136,107 @@
 .modal__icon {
     display: flex;
     align-items: center;
+}
+
+// temperature
+.modal__temperature {
+    display: none;
+    flex-direction: column;
+    
+    &.active {
+        display: flex;
+    }
+}
+
+.modal__temperature-range {    
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    @include phones {
+        transform: rotate(90deg);
+        margin-top: 150px;
+	}
+}
+
+.modal__temperature-range_slider {
+    appearance: none;
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(-90deg, #068FFF 2%, #FFD800 51%, #F76B1C 100%);
+    border-radius: 30px;
+    outline: none;
+}
+
+.modal__temperature-range_slider::-webkit-slider-thumb {
+    appearance: none;
+    border: 3px solid rgba(51,51,51,0.10);
+    border: 4px solid #FFFFFF;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.modal__temperature-range_slider::-moz-range-thumb {
+    border: 3px solid rgba(51,51,51,0.10);
+    border: 4px solid #FFFFFF;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.modal__temperature-min {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    user-select: none;
+
+    @include phones {
+        transform: rotate(-90deg);
+	}
+}
+
+.modal__temperature-max {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    user-select: none;
+
+    @include phones {
+        transform: rotate(-90deg);
+	}
+}
+
+.modal__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.modal__nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: $itemColor;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 13px;
+    color: $main;
+    font-weight: 700;
+    margin-left: 20px;    
+    transition: background-color .15s ease-out;
+    cursor: pointer;
+
+    &:active {
+        background-color: darken($itemColor, 5%);
+    }
+    &.active {
+        background-color: $yellow;      
+    }  
 }
 
 #modal__temp {

@@ -1,8 +1,11 @@
 let Modal = (function() {
   const trigger = $qsa('.modal__trigger');
-  const modalsbg = $qsa('.modal__bg');
   const closers = $qsa('.modal__close');
   let isOpen = false;
+  let text = '';
+  let subtext = '';
+  let value = 0;
+
   const contentDelay = 200;
 
   const len = trigger.length;
@@ -11,17 +14,21 @@ let Modal = (function() {
     return document.querySelectorAll(el);
   }
 
+  // Получение информации эт элемента на который кликнули
   const handleClick = function(event) {
     event.preventDefault();
     const modal = document.getElementById('modal');
     const self = this;
-    // получить значение атрибута data-modal от кнопки
-    //var modalId = self.dataset.modal;
+
+    text = self.querySelector('.device__text').textContent;
+    subtext = self.querySelector('.device__subtext').textContent;
+    value = self.dataset.value;
 
     modal.classList.add('active');
     makeDiv(self, modal);
   };
 
+  // Подсавляем значения для фейкового дива
   const makeDiv = function(self, modal) {
     const fakediv = document.getElementById('modal__temp');
 
@@ -41,6 +48,7 @@ let Modal = (function() {
     }
   };
 
+  // накидываем новые свойства
   const moveTrig = function(modal, div) {
     const mProps = modal.querySelector('.modal__info').getBoundingClientRect();
 
@@ -53,6 +61,17 @@ let Modal = (function() {
     div.style.backgroundColor = 'white';
     div.style.opacity = 1;
 
+    const slider = document.getElementById('temperature-range');
+    const output = document.getElementById('value');
+    slider.value = value;
+    output.innerHTML = slider.value >= 0 ? '+' + slider.value : slider.value;
+
+    const textContent = modal.querySelector('.modal__title-text');
+    const subtextContent = modal.querySelector('.modal__title-subtext');
+
+    textContent.innerHTML = text;
+    subtextContent.innerHTML = subtext;
+
     setTimeout(() => {
       window.requestAnimationFrame(function() {
         open(modal, div);
@@ -60,6 +79,7 @@ let Modal = (function() {
     }, contentDelay);
   };
 
+  // открываем модалку
   const open = function(m, div) {
     if (!isOpen) {
       const info = m.querySelector('.modal__info');
@@ -73,6 +93,7 @@ let Modal = (function() {
     }
   };
 
+  // закрываем модалку
   const close = function(event) {
     event.preventDefault();
     event.stopImmediatePropagation();
@@ -102,7 +123,6 @@ let Modal = (function() {
     for (let i = 0; i < len; i++) {
       trigger[i].addEventListener('click', handleClick, false);
       closers[0].addEventListener('click', close, false);
-      modalsbg[0].addEventListener('click', close, false);
     }
   };
 

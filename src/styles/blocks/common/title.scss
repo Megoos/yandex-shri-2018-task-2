@@ -32,6 +32,10 @@
 }
 
 .title__nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
     background-color: $itemColor;
     border-radius: 20px;
     padding: 5px 15px;
