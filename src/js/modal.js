@@ -6,7 +6,7 @@ let Modal = (function() {
   let subtext = '';
   let value = 0;
 
-  const contentDelay = 200;
+  const contentDelay = 250;
 
   const len = trigger.length;
 
